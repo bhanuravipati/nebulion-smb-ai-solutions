@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useNavigate, useLocation } from "react-router-dom";
-import nebulionLogo from "@/assets/nebulion-logo.png";
+import logo from "@/assets/ChatGPT_Image_Sep_20__2025__11_15_25_AM-removebg-preview.png"
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -10,18 +10,20 @@ const Navbar = () => {
     <nav className="fixed top-0 w-full z-50 glass-card border-b border-primary/20">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div 
-            className="flex items-center cursor-pointer hover:scale-105 transition-transform duration-300"
-            onClick={() => navigate("/")}
-          >
-            <img 
-              src={nebulionLogo} 
-              alt="nebulionAI Logo" 
-              className="h-8 w-auto"
-            />
+          <div>
+            <div 
+              className="flex items-center cursor-pointer hover:scale-105 transition-transform duration-300"
+              onClick={() => navigate("/")}
+            >
+              <img 
+                src={logo} 
+                alt="nebulionAI Logo" 
+                className="h-12 scale-125 w-50"
+              />
+            </div>
           </div>
           
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center ml-auto mr-10 space-x-8">
             <Button
               variant="ghost"
               onClick={() => navigate("/")}
